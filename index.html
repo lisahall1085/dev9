@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dev-9</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Elderflower</h1>
+<div id="content">
+  <div id="greeting" class="message">Tiles beyond your dreams</div>
+  <table>
+    <tr>
+      <td>Custom sign: </td>
+      <td id="userSign">
+        <input id="userSignInput" type="text"></input>
+      </td>
+    </tr>
+    <tr>
+      <td>Upgrade Font?</td>
+      <td>
+          <select id="userFontInput" > 
+            <option>none</option>
+            <option>purple</option>
+            <option>red</option>
+            <option>green</option>
+        </select> 
+
+      </td>
+    </tr>
+    <tr>
+      <td>Upgrade Color?</td>
+      <td><input id="userColorInput" type="checkbox">(+$3 per tile)</input>
+      </td>
+    </tr>
+    <tr>
+      <td>Total tiles: </td>
+      <td id="tiles"></td>
+    </tr>
+    <tr>
+      <td>Subtotal: </td>
+      <td id="subTotal">$</td>
+    </tr>
+    <tr>
+      <td>Shipping: </td>
+      <td id="shipping">$</td>
+    </tr>
+    <tr>
+      <td>Grand total: </td>
+      <td id="grandTotal">$</td>
+    </tr>
+  </table>
+  <a href="#" id="confirmOrder" class="action">Preview & Confirm</a>
+</div>
+
+<div id="previewScreen">
+  <div id="previewHeader">Order Confirmation</div>
+  <div id="defaultMsg">UH OH! Please try again</div>
+
+  <a href="#" id=cancelButton>
+    <div id="cancelPreview">CANCEL</div>
+  </a>
+
+  <a href="#" id=confirmButton>
+    <div id="confirmPreview">CONFIRM</a>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
